@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace Microsoft.EntityFrameworkCore.TestUtilities
 {
-    public interface IExpectedData
+    public interface ISetSource
     {
-        IQueryable<TEntity> Set<TEntity>()
+        public IQueryable<TEntity> Set<TEntity>()
             where TEntity : class;
     }
 }
